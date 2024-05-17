@@ -1,119 +1,169 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/* Google Fonts'tan Poppins fontunu içe aktarır */
 
-/* tüm sayfayı etkiler */
+/* Tüm elementleri sıfırlar ve varsayılan stilleri belirler */
 * {
-font-family: "Poppins", sans-serif;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-outline: none;
-border: none;
-text-decoration: none;
-text-transform: capitalize;
-transition: 0.2s ease;
+    font-family: "Poppins", sans-serif; /* Tüm metinleri Poppins fontuyla gösterir */
+    margin: 0; /* Dış boşlukları sıfırlar */
+    padding: 0; /* İç boşlukları sıfırlar */
+    box-sizing: border-box; /* Kutu modelini belirler */
+    outline: none; /* Odak çerçevesini kaldırır */
+    border: none; /* Kenarlık eklemeyi kaldırır */
+    text-decoration: none; /* Metin altı çizgilerini kaldırır */
+    text-transform: capitalize; /* Metinleri baş harflerini büyük yapar */
+    transition: 0.2s ease; /* Geçiş efektini belirler */
 }
 
-.logo img{
-    height:6rem ;
-    }
-
-
-:root{
-    --main-color:#e84242;
-    --black-color:#0e0e0e;
-    --border:0.1rem solid rgba(255,255,255,0.4);
-
+/* .logo sınıfındaki resmin boyutunu belirler */
+.logo img {
+    height: 6rem;
 }
 
-/* 1 rem 16 px dir bur 1 remi 10px döndürdük */
-html{
-    font-size: 62.5%;
-    overflow-x:hidden;
-    scroll-padding-top:9rem;
-    scroll-behavior: smooth;
-}
-body{
-    background-color: var(--main-color);
+/* Kök (root) değişkenlerini tanımlar */
+:root {
+    --main-color: #e84242; /* Ana renk değişkeni */
+    --black-color: #0e0e0e; /* Siyah renk değişkeni */
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4); /* Kenarlık değişkeni */
 }
 
-section{
-    padding: 35rem 7%;
-}
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 2rem 3.75rem;
-    border-radius: 30rem;
-    font-size: 1.7rem;
-    color: #fff;
-    background-color: var(--black-color);
-    cursor: pointer;
+/* Temel HTML stilleri */
+html {
+    font-size: 62.5%; /* Temel font büyüklüğünü belirler */
+    overflow-x: hidden; /* Yatay taşmaları gizler */
+    scroll-padding-top: 9rem; /* Kaydırma başlığı için boşluk ayarlar */
+    scroll-behavior: smooth; /* Kaydırma davranışını belirler */
 }
 
-.title{
-    font-size: 2rem;
-}
-
-.header .logo img{
-height: 10rem;
-}
-.header{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7%;
-    margin: 2rem 7% ;
-    border-radius: 30rem;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
-}
-
-.header .navbar a{
-    margin: 0 1rem;
-    font-size: 1.6rem;
-    color: var(--black-color);
-    border-bottom:0.1rem solid transparent ;
+/* Temel body stilleri */
+body {
+    background-color: var(--main-color); /* Arka plan rengini belirler */
 
 }
+
+/* Bölümlerin stilleri */
+section {
+    padding: 35rem 7%; /* Bölüm içi dolguyu belirler */
+}
+
+/* Buton stilini belirler */
+.btn {
+    margin-top: 1rem; /* Üst boşluğu belirler */
+    display: inline-block; /* Blok öğeleri yan yana hizalar */
+    padding: 2rem 3.75rem; /* Dolguyu belirler */
+    border-radius: 30rem; /* Köşe yarıçapını belirler */
+    font-size: 1.7rem; /* Metin büyüklüğünü belirler */
+    color: #fff; /* Metin rengini belirler */
+    background-color: var(--black-color); /* Arkaplan rengini belirler */
+    cursor: pointer; /* İşaretçinin el işareti olmasını sağlar */
+}
+
+/* Başlık stilini belirler */
+.title {
+    font-size: 2rem; /* Metin büyüklüğünü belirler */
+}
+
+/* Başlık sınıfındaki resmin boyutunu belirler */
+.header .logo img {
+    height: 10rem;
+}
+
+/* Başlık stilini belirler */
+.header {
+    background-color: white; /* Arka plan rengini belirler */
+    display: flex; /* Öğeleri yatay olarak hizalar */
+    align-items: center; /* Öğeleri dikey olarak hizalar */
+    justify-content: space-between; /* Öğeleri aralarında eşit mesafede hizalar */
+    padding: 0 7%; /* Dolguyu belirler */
+    margin: 2rem 7%; /* Kenar boşluklarını belirler */
+    border-radius: 30rem; /* Köşe yarıçapını belirler */
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75); /* Kutu gölgesini belirler */
+    position: sticky; /* Yapışkan pozisyon belirler */
+    top: 0; /* Üst kenara göre konumunu belirler */
+    z-index: 1000; /* Yığınlama düzeyini belirler */
+}
+
+/* Başlık menü bağlantılarının stilini belirler */
+.header .navbar a {
+    margin: 0 1rem; /* Kenar boşluklarını belirler */
+    font-size: 1.6rem; /* Metin büyüklüğünü belirler */
+    color: var(--black-color); /* Metin rengini belirler */
+    border-bottom: 0.1rem solid transparent; /* Alt kenarlık belirler */
+}
+
+/* Başlık menü bağlantılarının etkin ve üzerine gelindiğindeki stilini belirler */
 .header .navbar .active,
-.header .navbar a:hover{
-    border-color: var(--main-color);
-    padding-bottom: 0.5rem;
+.header .navbar a:hover {
+    border-color: var(--main-color); /* Alt kenarlık rengini belirler */
+    padding-bottom: 0.5rem; /* Alt dolguyu belirler */
 }
 
-.header .buttons button{
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    background-color: transparent;
+/* Başlık düğmelerinin stilini belirler */
+.header .buttons button {
+    cursor: pointer; /* İşaretçinin el işareti olmasını sağlar */
+    font-size: 2.5rem; /* Metin büyüklüğünü belirler */
+    margin-left: 2rem; /* Sol boşluğu belirler */
+    background-color: transparent; /* Arkaplan rengini belirler */
 }
 
-.home{
-    min-height: 100vh;
-    background:url(../home.jpg) no-repeat;
-    background-size:cover ;
-    background-position:center ;
-    margin-top: -14.5rem;
+/* Anasayfa stilini belirler */
+.home {
+    min-height: 100vh; /* Minimum yüksekliği belirler */
+    background: url(../images/home.jpg) no-repeat; /* Arka plan resmini belirler */
+    background-size: cover; /* Arka plan resminin boyutunu belirler */
+    background-position: center; /* Arka plan resminin konumunu belirler */
+    margin-top: -14.5rem; /* Üst boşluğu belirler */
+    display: flex; /* Öğeleri yatay olarak hizalar */
+    align-items: center; /* Öğeleri dikey olarak hizalar */
+}
+
+/* Anasayfa içeriğinin stilini belirler */
+.home .content {
+    max-width: 60rem; /* Maksimum genişliği belirler */
+}
+
+/* Anasayfa başlığının stilini belirler */
+.home .content h3 {
+    font-size: 6rem; /* Metin büyüklüğünü belirler */
+    color: #fff; /* Metin rengini belirler */
+}
+
+/* Anasayfa paragrafının stilini belirler */
+.home .content p {
+    font-size: 2rem; /* Metin büyüklüğünü belirler */
+    font-weight: 300; /* Metin kalınlığını belirler */
+    line-height: 1.8; /* Satır yüksekliğini belirler */
+    padding: 1rem 0; /* Dolguyu belirler */
+    color: #ccc; /* Metin rengini belirler */
+}
+
+
+/* Menü Start */
+.menu .box-container{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    min-height:60rem ;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
 }
-.home .content{
-   max-width: 60rem;
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
 }
 
-.home .content h3{
-    font-size: 6rem;
-    color: #fff;
- }
+.menu .box-container .box .menu-category{
+    width: 100%;
+    object-fit: cover;
+}
 
- .home .content p{
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color:#ccc;
- }
+
+
+/* Menü End */
